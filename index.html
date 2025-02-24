@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basheer Wardak</title>
+
+    <!--  Bootstrap css file  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!--  font awesome icons  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+
+    <!--  Magnific Popup css file  -->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+
+    <!--  Owl-carousel css file  -->
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.min.css">
+
+    <!--  custom css file  -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <style>
+        .text-center {
+            text-align: center;
+        }
+        .project-area .our-project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .project-area .our-project .img {
+            width: 100%;
+            height: auto;
+        }
+        .project-area .our-project .title {
+            text-align: center;
+        }
+        .dark-mode-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 60px;
+            height: 30px;
+            background-color: #333;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.3s;
+            padding: 5px;
+        }
+        .dark-mode-toggle .toggle-icon {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .dark-mode-toggle .fa-sun {
+            color: #f39c12;
+        }
+        .dark-mode-toggle .fa-moon {
+            color: #e89f39;
+        }
+        body.dark-mode .dark-mode-toggle {
+            background-color: #fffdfd;
+        }
+        body.dark-mode .dark-mode-toggle .toggle-icon {
+            transform: translateX(32px);
+            background-color: #000000;
+        }
+        body.dark-mode .dark-mode-toggle .fa-sun {
+            color: #f57d05;
+        }
+        body.dark-mode .dark-mode-toggle .fa-moon {
+            color: #333;
+        }
+        body.dark-mode {
+            --primary-bg: #121212;
+            --primary-text: #ffffff;
+            --secondary-bg: #1e1e1e;
+        }
+        body {
+            background-color: var(--primary-bg, #ffffff);
+            color: var(--primary-text, #000000);
+            transition: background-color 0.5s, color 0.5s;
+        }
+        body.dark-mode .navbar,
+        body.dark-mode .footer-area {
+            background-color: var(--secondary-bg);
+        }
+        body.dark-mode .navbar a,
+        body.dark-mode .footer-area .para,
+        body.dark-mode .footer-area .social a,
+        body.dark-mode .footer-area .copyrights a {
+            color: var(--primary-text) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  ======================= Start Header Area ============================== -->
+    <header class="header_area">
+        <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">pages</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <div id="dark-mode-toggle" class="dark-mode-toggle">
+                                <i class="fas fa-sun"></i>
+                                <i class="fas fa-moon"></i>
+                                <div class="toggle-icon"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--  ======================= End Header Area ============================== -->
+
+    <!--  ======================= Start Main Area ================================ -->
+    <main class="site-main">
+        <!--  ======================= Start Banner Area =======================  -->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Hey</h3>
+                        <h1 class="title-text text-uppercase">I am Basheer Wardak</h1>
+                        <h4 class="title-text text-uppercase">Computer Science & Math Minor Student</h4>
+                        <div class="site-buttons">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
+                                    me</button>
+                                <button type="button" class="btn button secondary-button text-uppercase">Get My Resume</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                    <img
+                    src=" ./img/banner/banner-image.png "
+                    alt="Basheer Wardak, Computer Science & Math Minor "
+                    class="img-fluid"
+                    loading="lazy"
+                    />
+                     <!--   <img src="./img/banner/banner-image.png" alt="banner-img" class="img-fluid">  -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ======================= End Banner Area =======================  -->
+
+        <!--  ========================= About Area ==========================  -->
+        <section class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-image">
+                            <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>introduce</span>
+                            <span>myself</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                I’m Basheer Wardak, a passionate Computer Science student with a minor in Mathematics.
+                                I specialize in Data Analysis, Machine Learning, and Cybersecurity. With experience in Python, Java, and problem-solving, I thrive on building innovative solutions.
+                            </p>
+                            <p class="para">
+                                Being multilingual in Pashto, Dari, English, Urdu, and Hindi, I enjoy collaborating in diverse environments.
+                                Whether it’s optimizing business processes, analyzing data, or securing systems, I am always eager to learn and grow.
+                            </p>
+                        </div>
+                       <!-- <button type="button" class="btn button primary-button text-uppercase">Download Resume</button>  -->
+                        <a
+                        href="./docs/Basheer_Wardak_Resume.pdf"
+                        download="Basheer_Wardak_Resume.pdf"
+                        class="btn button primary-button text-uppercase"
+                        >
+                    doownload Resume
+                </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ========================= End About Area ==========================  -->
+
+        <!--  ======================= Project Area =============================  -->
+        <section class="project-area">
+            <div class="container">
+                <div class="project-title pb-5 text-center">
+                    <h1 class="text-uppercase title-h1">Projects</h1>
+                    <h1 class="text-uppercase title-h1">Coming Soon...</h1>
+                </div>
+
+                <div class="row grid justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item latest">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/placeholder.jpg" alt="project-1" class="img-fluid" style="filter: blur(5px);"> 
+                            </div>
+                            <div class="title py-5">
+                                <span class="text-secondary">Coming Soon...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/placeholder.jpg" alt="project-2" class="img-fluid" style="filter: blur(5px);">
+                            </div>
+                            <div class="title py-4">
+                                <span class="text-secondary">Coming Soon...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 element-item">
+                        <div class="our-project">
+                            <div class="img">
+                                <img src="./img/portfolio/placeholder.jpg" alt="project-3" class="img-fluid" style="filter: blur(5px);">
+                            </div>
+                            <div class="title py-4">
+                                <span class="text-secondary">Coming Soon...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  ======================= End Project Area =============================  -->
+    </main>
+    <!--  ======================= End Main Area ================================ -->
+
+    <!--  ======================= Start Footer Area ================================ -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+                    <a href="#"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Let's Get Connected</h5>
+                    <a href="https://github.com/BasheerWardak" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/basheer-wardak-7533b9306" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2025 All rights reserved | This Website is made by
+                        <a href="#"><span style="color: var(--primary-color);">Basheer Wardak</span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  ======================= End Footer Area ================================ -->
+
+    <!--  Jquery js file  -->
+    <script src="./js/jquery.3.4.1.js"></script>
+
+    <!--  Bootstrap js file  -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!--  isotope js library  -->
+    <script src="./vendor/isotope/isotope.min.js"></script>
+
+    <!--  Magnific popup script file  -->
+    <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+    <!--  custom js file  -->
+    <script src="./js/main.js"></script>
+    <script>
+        // Ensure Dark Mode is loaded correctly when the page refreshes
+        document.addEventListener("DOMContentLoaded", () => {
+            if (localStorage.getItem("darkMode") === "enabled") {
+                document.body.classList.add("dark-mode");
+            }
+        });
+
+        // Store user preference in localStorage
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+
+            if (body.classList.contains("dark-mode")) {
+                localStorage.setItem("darkMode", "enabled");
+            } else {
+                localStorage.setItem("darkMode", "disabled");
+            }
+        }
+
+        document.getElementById('dark-mode-toggle').addEventListener('click', toggleDarkMode);
+    </script>
+</body>
+
+</html>
